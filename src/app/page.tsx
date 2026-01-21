@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { 
   Github, Linkedin, Mail, Shield, Terminal, Download, 
-  Check, Menu, X, Fingerprint, Phone, Database, Server as ServerIcon, 
+  Check, Fingerprint, Phone, Database, Server as ServerIcon, 
   Network, Layers, Code2, Trophy, Calendar, Target
 } from 'lucide-react';
 
@@ -34,7 +34,6 @@ const RDLogo = ({ className = "" }) => (
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState('Reseau');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
 
@@ -214,9 +213,6 @@ export default function Portfolio() {
             ))}
           </div>
 
-          <button className="md:hidden absolute right-4 text-stone-300" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X /> : <Menu />}
-          </button>
         </div>
       </nav>
 
@@ -437,10 +433,10 @@ export default function Portfolio() {
                     </p>
 
                     {event.result && (
-                       <div className="mt-auto pt-3 border-t border-stone-800 flex items-center gap-2 text-xs font-medium text-emerald-400">
-                           {event.title === "Hack The Box" ? <Target size={14} /> : <Trophy size={14} />}
-                           {event.result}
-                       </div>
+                        <div className="mt-auto pt-3 border-t border-stone-800 flex items-center gap-2 text-xs font-medium text-emerald-400">
+                            {event.title === "Hack The Box" ? <Target size={14} /> : <Trophy size={14} />}
+                            {event.result}
+                        </div>
                     )}
                  </div>
               </div>
@@ -476,10 +472,10 @@ export default function Portfolio() {
           </div>
 
           <div className="text-right text-stone-600 text-xs">
-            <p className="mb-1 font-mono flex items-center gap-2 justify-end">
+            <a href="tel:+33786613967" className="mb-1 font-mono flex items-center gap-2 justify-end hover:text-emerald-400 transition">
                 <Phone size={14} className="text-emerald-500" />
                 +33 7 86 61 39 67
-            </p>
+            </a>
             <p>Développé par mes soins avec Next.js & Tailwind</p>
           </div>
         </div>
