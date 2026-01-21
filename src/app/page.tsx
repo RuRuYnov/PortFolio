@@ -167,8 +167,8 @@ export default function Portfolio() {
     {
       title: "Challenge 48h",
       date: "Janvier 2025",
-      type: "Compétition B1 vs B3",
-      desc: "Scénario d'intrusion en temps limité : extraction critique de la mémoire d'un serveur de base de données sur un réseau inconnu.",
+      type: "Compétition B1, B2 & B3",
+      desc: "Production d'un site web destiné à la Métropole Européenne de Lille. Travail en équipe sur 48 heures, 2 jours complets sur le campus, avec présentation finale devant jury.",
       result: "🥉 3ème place", 
       image: "/event-challenge48h.jpg"
     },
