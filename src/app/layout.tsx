@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";  // <--- C'EST CETTE LIGNE QUI EST SOUVENT MANQUANTE
+import "./globals.css";  
 
 const inter = Inter({ subsets: ["latin"] });
 
