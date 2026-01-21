@@ -271,7 +271,7 @@ export default function Portfolio() {
 
                 <div className="flex justify-center md:justify-start">
                     <a 
-                        href="/cv.pdf" 
+                        href="/CV Ruben DURIEZ Admin. Sys. & Réseaux.pdf" 
                         download="CV Ruben DURIEZ Admin. Sys. & Réseaux.pdf"
                         className="flex items-center gap-2 px-6 py-2 border border-emerald-600 text-emerald-500 rounded hover:bg-emerald-600 hover:text-stone-950 transition font-medium group"
                     >
