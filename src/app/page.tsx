@@ -262,7 +262,7 @@ export default function Portfolio() {
                     Passionné par la CyberSécurité, je suis à la recherche d’un <strong className="text-emerald-400">stage (min. 5 semaines) à partir de Juin</strong> et d’une <strong className="text-emerald-400">alternance pour Septembre</strong> (rythme 2 sem. entreprise / 1 sem. école).
                 </p>
                 <p className="text-stone-400 leading-relaxed mb-6">
-                    Mon objectif est de monter en compétences sur des architectures complexes et de participer activement à la sécurisation des infrastructures.
+                    Mon objectif est de concevoir des architectures systèmes robustes et performantes, tout en intégrant une dimension sécurité forte dès la conception.
                 </p>
 
                 <div className="flex justify-center md:justify-start">
