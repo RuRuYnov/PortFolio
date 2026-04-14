@@ -152,6 +152,13 @@ export default function Portfolio() {
       desc: "Jeu type 'Subway Surfer' 2D affiché sur PC mais contrôlé en temps réel via le gyroscope d'un téléphone mobile.",
       techs: ["TypeScript", "WebSockets"],
       image: "/projet-rocketcar.jpg"
+    },
+    {
+      title: "Déploiement Industriel d'un Environnement Windows Server Mutli-Sites",
+      category: "Scolaire",
+      desc: "Mise en place d'une infrastructure Windows Server multi-sites avec Active Directory, gestion centralisée des utilisateurs et ressources, et virtualisation via VMware.",
+      techs: ["Windows Server (AD DS)", "Windows 10/11 (Clients)", "Hyperviseur VMware"],
+      image: "/AD.png"
     }
   ];
 
@@ -237,8 +244,7 @@ export default function Portfolio() {
             </h2>
             
             <p className="text-stone-400 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">
-              Actuellement en 2ème année de Bachelor. Au-delà de l'administration Windows et Linux, 
-              je mets mes compétences techniques au service de la <span className="text-emerald-400 font-medium">surveillance</span> et de la <span className="text-emerald-400 font-medium">protection active</span> des systèmes d'information.
+              Actuellement en 2ème année de Bachelor. Au-delà de l'administration Windows et Linux, je conçois et administre des <span className="text-emerald-400 font-medium">infrastructures</span> systèmes et <span className="text-emerald-400 font-medium">réseaux</span> robustes, en garantissant leur disponibilité et leur sécurité.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -259,10 +265,10 @@ export default function Portfolio() {
                     <RDLogo className="w-10 h-10 mr-2" /> Profil
                 </h3>
                 <p className="text-stone-400 leading-relaxed mb-4">
-                    Passionné par la CyberSécurité, je suis à la recherche d’un <strong className="text-emerald-400">stage (min. 5 semaines) à partir de Juin</strong> et d’une <strong className="text-emerald-400">alternance pour Septembre</strong> (rythme 2 sem. entreprise / 1 sem. école).
+                    Passionné par le fonctionnement et l'architecture des systèmes d'information, je recherche <span className="text-emerald-400 font-medium">un stage</span> (dès Juin) et <span className="text-emerald-400 font-medium">une alternance</span> en Infrastructure & Réseaux pour Septembre (rythme 2 sem. entreprise / 1 sem. école).
                 </p>
                 <p className="text-stone-400 leading-relaxed mb-6">
-                    Mon objectif est de concevoir des architectures systèmes robustes et performantes, tout en intégrant une dimension sécurité forte dès la conception.
+                    Mon objectif : déployer, maintenir et optimiser des réseaux performants et hautement disponibles, tout en capitalisant sur mon bagage en cybersécurité.
                 </p>
 
                 <div className="flex justify-center md:justify-start">
