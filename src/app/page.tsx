@@ -287,7 +287,13 @@ export default function Portfolio() {
                 <div className="p-6 bg-stone-950 border border-stone-800 rounded-xl relative overflow-hidden group">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-lime-500"></div>
                     <div className="text-center">
-                        <div className="w-24 h-24 bg-stone-800 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl">👨‍💻</div>
+                        <div className="w-24 h-24 bg-stone-800 rounded-full mx-auto mb-4 overflow-hidden relative">
+                          <img
+                            src="/pp.png"
+                            alt="Photo de Ruben DURIEZ"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <div className="text-white font-bold text-lg">Ruben DURIEZ</div>
                         <div className="text-emerald-500 text-sm mb-4">@RuRuYnov</div>
                         <a href="https://github.com/RuRuYnov" target="_blank" className="text-xs border border-stone-700 px-3 py-1 rounded hover:bg-emerald-500 hover:text-stone-950 transition">GitHub Profile</a>
