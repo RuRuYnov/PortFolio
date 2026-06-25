@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { 
   Github, Linkedin, Mail, Shield, Terminal, Download, 
   Check, Fingerprint, Phone, Database, Server as ServerIcon, 
-  Network, Layers, Code2, Trophy, Calendar, Target
+  Network, Layers, Code2, Trophy, Calendar, Target,
+  Briefcase
 } from 'lucide-react';
 
 const RDLogo = ({ className = "" }) => (
@@ -96,6 +97,57 @@ export default function Portfolio() {
     ]
   };
 
+  const mdsMissions = [
+   {
+    title: "Segmentation & Adressage",
+    category: "Réseau",
+    date: "Juin 2026",
+    desc: "Planification (Plan + Tableau de brassage), Architecture et configuration avancée des VLANs - Gestion des services DHCP.",
+    techs: ["VLAN", "DHCP", "Switching"],
+    image: "/network1.jpg"
+  },
+  {
+    title: "Sécurisation Réseau & Pare-feu",
+    category: "Sécurité",
+    date: "Juin 2026",
+    desc: "Déploiement et configuration de pare-feux OPNsense pour sécuriser l'infrastructure réseau. Mise en place de règles de filtrage strictes pour protéger les flux.",
+    techs: ["OPNsense", "Firewall", "Sécurité"],
+    image: "/opnsense.jpg" 
+  },
+  {
+    title: "Virtualisation & Sauvegardes",
+    category: "Infrastructure",
+    date: "Juin 2026",
+    desc: "Déploiement d'environnements virtualisés avec Proxmox VE. Gestion complète des machines virtuelles et configuration des serveurs de sauvegarde.",
+    techs: ["Proxmox VE", "Proxmox Backup", "VM"],
+    image: "/proxmox.jpg"
+  },
+  {
+    title: "Service d'Update",
+    category: "Infrastructure",
+    date: "Juin 2026",
+    desc: "Mise en place d'une solution de Patch Management centralisée et sans agent pour Proxmox.",
+    techs: ["Proxmox VE", "Scripting", "LXC"],
+    image: "/update.jpg"
+  },
+  {
+    title: "Restauration d'un ancien serveur",
+    category: "Infrastructure",
+    date: "Juin 2026",
+    desc: "Remise en route d'un ancien serveur afin de le réutiliser en tant que serveur de test.",
+    techs: ["Proxmox VE", "VM", "LXC", "Docker"],
+    image: "/ibm1.jpg"
+  },
+  {
+    title: "Test de matériel d'identification RFID",
+    category: "Infrastructure",
+    date: "Juin 2026",
+    desc: "Configuration et test d'une flotte d'outils RFID (Antennes, lecteurs, tags, serveurs et MQTT).",
+    techs: ["RFID", "MQTT", "LXC"],
+    image: "/rfid.jpg"
+  }
+];
+  
   const projects = [
     {
       title: "SIEM",
@@ -230,7 +282,7 @@ export default function Portfolio() {
         <div className="relative z-10 animate-fade-in-up max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-emerald-950/30 border border-emerald-500/20 text-emerald-400 text-xs font-mono uppercase tracking-widest shadow-[0_0_10px_rgba(16,185,129,0.2)]">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            Recherche Stage & Alternance
+            Recherche Alternance
             </div>
 
             <h1 className="text-5xl md:text-8xl font-black text-white mb-6 tracking-tighter">
@@ -244,7 +296,7 @@ export default function Portfolio() {
             </h2>
             
             <p className="text-stone-400 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">
-              Actuellement en 2ème année de Bachelor. Au-delà de l'administration Windows et Linux, je conçois et administre des <span className="text-emerald-400 font-medium">infrastructures</span> systèmes et <span className="text-emerald-400 font-medium">réseaux</span> robustes, en garantissant leur disponibilité et leur sécurité.
+              Actuellement sur la fin de ma 2ème année de Bachelor. Au-delà de l'administration Windows et Linux, je conçois et administre des <span className="text-emerald-400 font-medium">infrastructures</span> systèmes et <span className="text-emerald-400 font-medium">réseaux</span> robustes, en garantissant leur disponibilité et leur sécurité.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -265,7 +317,7 @@ export default function Portfolio() {
                     <RDLogo className="w-10 h-10 mr-2" /> Profil
                 </h3>
                 <p className="text-stone-400 leading-relaxed mb-4">
-                    Passionné par le fonctionnement et l'architecture des systèmes d'information, je recherche <span className="text-emerald-400 font-medium">un stage</span> (dès Juin) et <span className="text-emerald-400 font-medium">une alternance</span> en Infrastructure & Réseaux pour Septembre (rythme 2 sem. entreprise / 1 sem. école).
+                    Passionné par le fonctionnement et l'architecture des systèmes d'information, je recherche <span className="text-emerald-400 font-medium">d'une alternance</span> en Infrastructure & Réseaux pour Septembre (rythme 2 sem. entreprise / 1 sem. école).
                 </p>
                 <p className="text-stone-400 leading-relaxed mb-6">
                     Mon objectif : déployer, maintenir et optimiser des réseaux performants et hautement disponibles, tout en capitalisant sur mon bagage en cybersécurité.
@@ -355,6 +407,60 @@ export default function Portfolio() {
                     ))}
                 </div>
 
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="stage-mds" className="py-24 px-4 bg-stone-900/20 border-y border-stone-900">
+        <div className="max-w-6xl mx-auto">
+           <div className="mb-12 text-center">
+            <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center gap-3">
+               <Briefcase className="text-emerald-500" /> Mon stage chez MDS Identification
+            </h3>
+            <div className="w-20 h-1 bg-emerald-600 mx-auto rounded-full"></div>
+            <p className="text-stone-400 mt-4 max-w-2xl mx-auto">
+              Aperçu des missions techniques et de la gestion d'infrastructure réalisées durant mon immersion.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {mdsMissions.map((mission, index) => (
+              <div key={index} className="group relative bg-stone-950 border border-stone-800 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col">
+                
+                <div className="h-40 bg-stone-900 relative overflow-hidden shrink-0">
+                   <Image 
+                     src={mission.image} 
+                     alt={mission.title}
+                     fill
+                     className="object-cover opacity-60 transition duration-500 transform group-hover:scale-110 group-hover:opacity-100"
+                   />
+                </div>
+                
+                <div className="p-4 flex flex-col flex-grow">
+                  <div className="flex justify-between items-start mb-2">
+                    <div className="inline-block px-2 py-0.5 rounded text-[10px] font-bold font-mono bg-emerald-950/50 text-emerald-400 border border-emerald-900">
+                        {mission.category}
+                    </div>
+                    <span className="text-[10px] text-stone-500 flex items-center gap-1 font-mono uppercase tracking-wider">
+                        <Calendar size={12} /> {mission.date}
+                    </span>
+                  </div>
+                  
+                  <h4 className="text-lg font-bold text-stone-100 mb-2 group-hover:text-emerald-400 transition">{mission.title}</h4>
+                  <p className="text-stone-400 text-xs mb-4 leading-relaxed line-clamp-3">
+                    {mission.desc}
+                  </p>
+
+                  <div className="flex flex-wrap gap-1.5 mt-auto pt-4">
+                    {mission.techs.map((tech, i) => (
+                        <span key={i} className="text-[10px] text-stone-500 bg-stone-900 px-2 py-0.5 rounded border border-stone-800">
+                            {tech}
+                        </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
