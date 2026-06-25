@@ -53,6 +53,7 @@ export default function Portfolio() {
   const navItems = [
     { label: 'À propos', id: 'apropos' },
     { label: 'Compétences', id: 'competences' },
+    { label: 'Exp. Pro.', id: 'stage-mds' },
     { label: 'Projets', id: 'projets' },
     { label: 'Événements', id: 'evenements' },
     { label: 'Contact', id: 'contact' },
