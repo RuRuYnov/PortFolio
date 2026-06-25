@@ -120,7 +120,7 @@ export default function Portfolio() {
     category: "Infrastructure",
     date: "Juin 2026",
     desc: "Déploiement d'environnements virtualisés avec Proxmox VE. Gestion complète des machines virtuelles et configuration des serveurs de sauvegarde.",
-    techs: ["Proxmox VE", "Proxmox Backup", "VM"],
+    techs: ["Proxmox VE", "Proxmox Backup", "VM", "MQTT", "Authentik"],
     image: "/proxmox.jpg"
   },
   {
@@ -143,7 +143,7 @@ export default function Portfolio() {
     title: "Test de matériel d'identification RFID",
     category: "Infrastructure",
     date: "Juin 2026",
-    desc: "Configuration et test d'une flotte d'outils RFID (Antennes, lecteurs, tags, serveurs et MQTT).",
+    desc: "Configuration et test d'une flotte d'outils RFID (Antennes, lecteurs, tags, serveurs).",
     techs: ["RFID", "MQTT", "LXC"],
     image: "/rfid.jpg"
   }
