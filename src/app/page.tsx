@@ -141,7 +141,7 @@ export default function Portfolio() {
   },
   {
     title: "Test de matériel d'identification RFID",
-    category: "Infrastructure",
+    category: "IOT",
     date: "Juin 2026",
     desc: "Configuration et test d'une flotte d'outils RFID (Antennes, lecteurs, tags, serveurs).",
     techs: ["RFID", "MQTT", "LXC"],
